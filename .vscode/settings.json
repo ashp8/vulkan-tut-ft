@@ -2,6 +2,10 @@
     "files.associations": {
         "iostream": "cpp",
         "optional": "cpp",
-        "stdexcept": "cpp"
+        "stdexcept": "cpp",
+        "*.tcc": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "vector": "cpp"
     },
 }
