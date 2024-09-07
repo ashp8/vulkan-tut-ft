@@ -10,6 +10,7 @@
 #include <cstdint>
 #include <limits>
 #include <algorithm>
+#include <fstream>
 
 struct SwapChainSupportDetails {
     VkSurfaceCapabilitiesKHR capabilities;
@@ -52,6 +53,7 @@ private:
     void createSwapChain();
     void createImageViews();
     void createGraphicsPipeline();
+    VkShaderModule createShaderModule(const std::vector<char>& code);
 
     
 private:
