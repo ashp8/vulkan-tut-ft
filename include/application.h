@@ -61,6 +61,8 @@ private:
     void recordCommandBuffer(VkCommandBuffer commandBuffer, uint32_t imageIndex);
     void drawFrame();
     void createSyncObjects();
+    void recreateSwapChain();
+    void cleanupSwapChain();
     
 private:
     VkInstance instance;
