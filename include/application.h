@@ -30,7 +30,6 @@ struct QueueFamilyIndices {
 class Application {
 public:
     void run();
-
 private:
     void initMainwindow();
     void initVulkan();
@@ -64,6 +63,9 @@ private:
     void recreateSwapChain();
     void cleanupSwapChain();
     
+public:
+    bool framebufferResized = false;
+
 private:
     VkInstance instance;
     VkPhysicalDevice physicalDevice = VK_NULL_HANDLE;
@@ -87,6 +89,7 @@ private:
     std::vector<VkSemaphore> imageAvailableSemaphores;
     std::vector<VkSemaphore> renderFinishedSemaphores;
     std::vector<VkFence> inFlightFences;
+
 
 
     GLFWwindow* window;
